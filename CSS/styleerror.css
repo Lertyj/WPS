@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+body{
+  height: 100%;
+}
+h1{
+  font-family: 'KyivType Sans';
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 132.9%;
+  white-space: nowrap;
+  color: #F5F5F5;
+  margin-bottom: 0.2em;
+}
+p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFDBBB;
+}
+@font-face {
+  font-family: 'KyivType Sans';
+  src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+.container{
+  margin: 0 auto;
+  background:
+  url(../SVG/Vectors4.svg) left top,
+  url(../IMG/Backgroundpcrt.png) left top no-repeat,
+  #222021;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex: 1 1 auto;
+}
+input[type="text"]{
+  color: #F5F5F5;
+}
+textarea[name="Question"]{
+  color: #F5F5F5;
+}
+
+/* header */
+.header{
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.header ul{
+  display: flex;
+  color: #F5F5F5;
+}
+.header li{
+  padding: 30px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+.header-logo{
+  margin-left: 8%;
+  margin-top: 30px;
+}
+
+.header a{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.header-menu .icon{
+  display: none;
+}
+
+/* error */
+.error-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#button{
+  cursor: pointer;
+  text-indent: 0;
+  padding: 0 1.5em 0 1.5em;
+  font-size: 30px;
+  background: #728BAD;
+  border-radius: 42px;
+  color: #F5F5F5;
+  border: none;
+  min-width: 5em;
+  height: 2em;
+  width: auto;
+}
+.error-img img{
+  max-width: 100%;
+  height: auto;
+}
+.error-button{
+  margin-top: 3em;
+  padding-bottom: 3em;
+}
+@media screen and (max-width: 1280px){
+  /* other */
+  .container{
+      background:
+      url(../SVG/Vectors4.svg) left top,
+      url(../IMG/Backgroundpcrt.png) left top no-repeat,
+      #222021;
+      background-size: 75% auto;
+  }
+  h1{
+      font-size: calc(30px + (45 + 45 * 0.7) * ((100vw - 375px)/1440))
+  }   
+  p{
+      font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440));
+  }
+  .anyquestions-form input,.anyquestions-form textarea{
+      font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440));
+  }
+  #button{
+      font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440))
+  }
+  /* header */
+  .header li{
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* header */
+  .header li{
+    padding: 15px;
+}
+.topnav{
+    padding-top: 22px;
+}
+.topnav a{
+    display: none;
+}
+.topnav .icon{
+    position: absolute;
+    display: block;
+    right: 60px;
+}
+.header-logo img{
+    width: 106px;
+    height: 45px;
+}
+.topnav.responsive{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.topnav.responsive a{
+    display: flex;
+}
+.topnav.responsive li:last-child{
+    position: absolute;
+    top: 24px;
+    right: -190px;
+    padding-top: 26px;
+}
+.topnav.responsive li{
+    margin-right: 190px;
+    width: 190px;
+}
+.topnav li:last-child a{
+    max-width: 50px;
+    max-height: 25px;
+}
+.topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
+    position: absolute;
+    top: 50%;
+    width: 23px;
+    height: 2px;
+    background: #F5F5F5;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10%;
+    border-radius: 15%;
+}
+.topnav .icon span::after, .topnav .icon span::before{
+    content: '';
+}
+.topnav .icon span::after{
+    width: 50%;
+    margin-left: 0;
+    transform: translateY(7px);;
+}
+.topnav .icon span::before{
+    transform: translateY(-7px);
+    width: 50%;
+    margin-left: 0;
+    left: 0;
+}
+}
+
+@media screen and (max-width: 576px) {
+  /* header */
+  .header{
+      border-radius: 0px 0px 60px 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* other */
+  .container{
+    background:
+      url(../SVG/Vectors4.svg) left top,
+      url(../IMG/Backgroundpcrtph.png) left top no-repeat,
+      #222021;
+  }
+}

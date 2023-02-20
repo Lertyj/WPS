@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    height: 100%;
+}
+h1{
+    padding-top: 44px;
+    font-family: 'KyivType Sans';
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #F5F5F5;
+    margin-left: 8%;
+    margin-bottom: 1.5em;
+}
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    color: #F5F5F5;
+}
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+.container{
+    margin: 0 auto;
+    background:
+    url(../SVG/Vectors4.svg) left top,
+    url(../IMG/wood.png) right bottom 138.5px no-repeat,
+    #222021;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1 1 auto;
+}
+input[type="text"]{
+    color: #F5F5F5;
+}
+textarea[name="Question"]{
+    color: #F5F5F5;
+}
+
+/* header */
+.header{
+    background: #1E0C06;
+    display: flex;
+    border-radius: 0px 0px 79px 79px;
+    box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17);
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    color: #F5F5F5;
+}
+.header li{
+    padding: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    margin-left: 8%;
+    margin-top: 30px;
+}
+#active{
+    color: #A3B8D7;
+}
+.header a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+.header-menu .icon{
+    display: none;
+}
+/* our work */
+.prices{
+    margin-top: 160px;
+}
+.prices-txt h1{
+    margin-bottom: 120px;
+}
+.prices-table{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+table{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 132.9%;
+    color: #1E0C06;
+    border-radius: 21px;
+    min-width: 100%;
+    border-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #D9D9D9;
+}
+th,td{
+    text-align: left;
+    height: 2.3em;
+    border-bottom: 1px solid rgba(142, 57, 33, 0.37);
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    max-width: 77%;
+    margin: 0 auto;
+}
+.table-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.table-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+th[scope="col"]{
+    border-bottom: none;
+}
+
+.table-top .table-first tr th:first-child, .table-bottom .table-third tr th:first-child{
+    width: 5em;
+    padding-left: 2%;
+}
+.table-top .table-first tr th:nth-child(2), .table-bottom .table-third tr th:nth-child(2), .table-top .table-first tr td:nth-child(2), .table-bottom .table-third tr td:nth-child(2){
+    width: 3.5em;
+}
+.table-top .table-first tr th:nth-child(3), .table-bottom .table-third tr th:nth-child(3), .table-top .table-first tr td:nth-child(3), .table-bottom .table-third tr td:nth-child(3){
+    width: 3em;
+}
+.table-top .table-first tr th:nth-child(4), .table-bottom .table-third tr th:nth-child(4), .table-top .table-first tr td:nth-child(4), .table-bottom .table-third tr td:nth-child(4){
+    width: 4.5em;
+}
+.table-top tr:nth-child(6) th, .table-bottom tr:nth-child(4) th,.table-top tr:nth-child(6) td, .table-bottom tr:nth-child(4) td{
+    height: 0.5em;
+}
+
+.table-top .table-second tr th:first-child, .table-bottom .table-fourth tr td:first-child, .table-top .table-second tr td:first-child{
+    width: 5em;
+    padding-left: 2%;
+}
+.table-top .table-second tr th:nth-child(2), .table-bottom .table-fourth tr th:nth-child(2), .table-top .table-second tr td:nth-child(2), .table-bottom .table-fourth tr td:nth-child(2){
+    width: 5.5em;
+}
+.table-top .table-second tr th:nth-child(3), .table-bottom .table-fourth tr th:nth-child(3), .table-top .table-second tr td:nth-child(3), .table-bottom .table-fourth tr td:nth-child(3){
+    width: 4.5em;
+}
+.table-top .table-second tr th:nth-child(3), .table-top .table-second tr td:nth-child(3), .table-bottom .table-fourth tr th:nth-child(3), .table-bottom .table-fourth tr td:nth-child(3){
+    background: #E69679;
+    padding-left: 2%;
+}
+.table-top{
+    margin-bottom: 2em;
+}
+
+.prices-table .prev, .prices-table .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    color: white;
+}
+.prices-table .next {
+    right: 0;
+}
+.next {
+    margin-right: 6%;
+    max-width: 4%;
+}
+.next img{
+    max-width: 100%;
+}
+.prev {
+    margin-left: 6%;
+    max-width: 4%;
+}
+.prev img{
+    max-width: 100%;
+}
+.slide-points {
+    text-align: center;
+    margin-left: 5%;
+}
+.point {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    border: 5px solid #728BAD;
+    background-color: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+.on {
+    background: #D5DCEE;
+}
+
+/* any questions*/
+.anyquestions{
+    flex-direction: column;
+    display: flex;
+    max-width: 85%;
+    margin: 160px auto 50px;
+    color: #F5F5F5;
+}
+.anyquestions h1{
+    margin-bottom: 2rem;
+    text-align: right;
+}
+.anyquestions-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.anyquestions-txt{
+    max-width: 41%;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.anyquestions-form input,.anyquestions-form textarea{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    text-indent: 30px;
+    background: none;
+    resize: none;
+    min-width: 90%;
+    max-width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+#name{
+    box-sizing: border-box;
+    border: 4px solid #728BAD;
+    border-radius: 42px;
+}
+#phonenumber{
+    box-sizing: border-box;
+    border: 4px solid #728BAD;
+    border-radius: 42px;
+}
+#question{
+    box-sizing: border-box;
+    max-height: 257px;
+    border: 4px solid #728BAD;
+    border-radius: 42px;
+}
+#button{
+    cursor: pointer;
+    text-indent: 0;
+    padding: 0 1.5em 0 1.5em;
+    font-size: 30px;
+    background: #728BAD;
+    border-radius: 42px;
+    color: #F5F5F5;
+    border: none;
+    min-width: 5em;
+    height: 2em;
+    width: auto;
+}
+/* footer */
+.footer{
+    color: #F5F5F5;
+    max-width: 100%;
+    min-height: 301px;
+    background: #222021;
+    box-shadow: 0px -6px 52px rgba(245, 245, 245, 0.17);
+}
+.contactinfo-footer{
+    margin-left: 8%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+
+}
+.contactinfo-footer-contacts ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+}
+.contactinfo-footer-contacts li{
+    margin-left: 9rem;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 30px;
+}
+.contactinfo-footer-contacts li:first-child{
+    margin-bottom: 25px;
+}
+.contactinfo-footer-contacts img{
+    margin-right: 10px;
+}
+.privacy{
+    margin-top: 60px;
+    margin-left: 8%;
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 139.4%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px){
+    /* other */
+    .container{
+        background:
+        url(../SVG/Vectors4.svg) left top,
+        #222021;
+    }
+    h1{
+        font-size: calc(30px + (45 + 45 * 0.7) * ((100vw - 375px)/1440))
+    }   
+    p{
+        font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440));
+    }
+    .anyquestions-form input,.anyquestions-form textarea{
+        font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440));
+    }
+    #button{
+        font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440))
+    }
+    .footer li{
+        font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 375px)/1440));
+    }
+    /* header */
+    .header li{
+        padding: 20px;
+    }
+
+    /* prices */
+    .prices{
+        margin-top: 150px;
+    }
+    .prices h1{
+        margin-bottom: 90px;
+    }
+    table{
+        border-radius: 16px;
+        font-size: calc(9.5px + (20.5 + 20.5 * 0.7) * ((100vw - 450px)/1440));
+    }
+    .slide-points{
+        margin-left: 3%;
+    }
+    /* any questions */
+    .anyquestions{
+        max-width: 90%;
+        margin-top: 140px;
+    }
+    .anyquestions-form input, .anyquestions-form textarea{
+        width: 56%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    /* header */
+    .header li{
+        padding: 15px;
+    }
+    .header li:last-child{
+        padding-right: 50px;
+    }
+    .topnav{
+        padding-top: 22px;
+    }
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon{
+        position: absolute;
+        display: block;
+        right: 60px;
+    }
+    .header-logo img{
+        width: 106px;
+        height: 45px;
+    }
+    .topnav.responsive{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .topnav.responsive a{
+        display: flex;
+    }
+    .topnav.responsive li:last-child{
+        position: absolute;
+        top: 24px;
+        right: -190px;
+        padding-top: 26px;
+    }
+    .topnav.responsive li{
+        margin-right: 190px;
+        width: 190px;
+    }
+    .topnav li:last-child a{
+        max-width: 50px;
+        max-height: 25px;
+    }
+    .topnav .icon span,.topnav .icon span::after, .topnav .icon span::before{
+        position: absolute;
+        top: 50%;
+        width: 23px;
+        height: 2px;
+        background: #F5F5F5;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10%;
+        border-radius: 15%;
+    }
+    .topnav .icon span::after, .topnav .icon span::before{
+        content: '';
+    }
+    .topnav .icon span::after{
+        width: 50%;
+        margin-left: 0;
+        transform: translateY(7px);;
+    }
+    .topnav .icon span::before{
+        transform: translateY(-7px);
+        width: 50%;
+        margin-left: 0;
+        left: 0;
+    }
+    /* any questions? */
+    .anyquestions h1{
+        margin-left: 0;
+        text-align: left;
+    }
+    .anyquestions-box{
+        flex-direction: column;
+    }
+    .anyquestions-txt{
+        max-width: 76%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    /* footer */
+    .contactinfo-footer {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .contactinfo-footer-contacts li{
+        margin-left: 3rem;
+    }
+    .contactinfo-footer-contacts ul{
+        margin-top: 3rem;
+        display: block;
+    }
+    .privacy{
+        display: flex;
+        justify-content: center
+    }
+}
+@media screen and (max-width: 768px) {
+
+    /* prices */
+    .prices{
+        margin-top: 50px;
+    }
+    .prices-txt h1{
+        margin-bottom: 40px;
+    }
+    .point{
+        height: 12px;
+        width: 12px;
+    }
+    table{
+        border-radius: 10px;
+    }
+    .table-top{
+        margin-bottom: 1em;
+    }
+    .point{
+        border: 4px solid #728BAD;
+    }
+    /* any questions? */
+    .anyquestions{
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 576px) {
+    /* header */
+    .header{
+        border-radius: 0px 0px 60px 60px;
+    }
+
+    /* prices */
+    .prices-txt h1{
+        margin-bottom: 30px;
+    }
+    .point{
+        border: 3px solid #728BAD;
+        height: 9px;
+        width: 9px;
+    }
+    table{
+        border-radius: 7px;
+    }
+    /* any questions?*/
+    .anyquestions{
+        margin-top: 70px;
+        margin-left: 8%;
+    }
+    .anyquestions-form input, .anyquestions-form textarea{
+        font-size: 15px;
+        padding: 3px;
+        text-indent: 20px;
+    }
+    #name{
+        border: 3px solid #728BAD;
+    }
+
+    #question{
+        border-radius: 28px;
+        border: 3px solid #728BAD;
+        max-height: 134px;
+    }
+    #phonenumber{
+        border: 3px solid #728BAD;
+    }
+
+    /* footer */
+    .contactinfo-footer-contacts ul{
+        font-size: 15px;
+    }
+    .privacy{
+        font-size: 11px;
+    }
+    .contactinfo-footer-contacts img{
+        width: 24px;
+        height: 24px;
+    }
+    .contactinfo-footer-logo img{
+        width: 162px;
+        height: 69px;
+    }
+}

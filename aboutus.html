@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleaboutus.css">
+    <title>About us</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-logo">
+                <a href="home.html"><img src="SVG/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="header-menu">
+                <ul class="topnav" id="mytopnav">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="prices.html">Prices for services</a></li>
+                    <li><a href="aboutus.html" id="active">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="menu" class="icon"><span></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="aboutus">
+                <div class="aboutus-content">
+                    <div class="aboutus-txt">
+                    <h1>About us</h1>
+                    <p>
+                        <b>BIO CWT </b>- We manufacture solid 
+                        wood products according to individual drawings. 
+                        We make chairs, armchairs, wardrobes, beds and much more in
+                         our own workshop, equipped with all the necessary industrial equipment.
+                    </p>
+                    </div>
+                    <div class="aboutus-img">
+                        <img src="IMG/person1.png" alt="person" id="person1">
+                        <img src="IMG/person2.png" alt="person" id="person2">
+                        <img src="IMG/person3.png" alt="person" id="person3">
+                    </div>
+                </div>
+            </div>
+            <div class="ourwork">
+                <div class="ourwork-txt">
+                    <h1>our work</h1>
+                </div>
+                <div class="ourwork-img">
+                    <div class="slide">
+                    <img src="IMG/woodenkitch.png" alt="fist slide">
+                    </div>
+                  
+                    <div class="slide">
+                    <img src="IMG/woodenkitch.png" alt="second slide">
+                    </div>
+                  
+                    <div class="slide">
+                    <img src="IMG/woodenkitch.png" alt="third slide">
+                    </div>
+                  
+                    <a class="prev" onclick="minusSlide()"><img src="SVG/arrowleft.svg" alt=""></a>
+                    <a class="next" onclick="plusSlide()"><img src="SVG/arrowright.svg" alt=""></a>
+                  </div>
+                  <div class="slide-points">
+                    <span class="point" onclick="currentSlide(1)"></span>  
+                    <span class="point" onclick="currentSlide(2)"></span>  
+                    <span class="point" onclick="currentSlide(3)"></span>  
+                  </div>
+            </div>
+            <div class="anyquestions">
+                <h1>Any questions?</h1>
+                <div class="anyquestions-box">
+                    <div class="anyquestions-txt">
+                        <p>Write to us and we will be sure to 
+                            answer all your questions 
+                            and give you a comprehensive consultation.
+                        </p>
+                    </div>
+                    <div class="anyquestions-form">
+                        <p ><input id="name" type="text" name="Name" placeholder="Your name"></p>
+                        <p ><input id="phonenumber" type="text" name="Phonenumber" placeholder="Your telephone number"></p>
+                        <p><textarea id="question" name="Question" cols="40" rows="10" placeholder="Your Question"></textarea></p>
+                        <p><input id="button" type="submit" value="Send"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="contactinfo-footer">
+                <div class="contactinfo-footer-logo">
+                    <img src="SVG/logo.svg" alt="logo">
+                </div>
+                <div class="contactinfo-footer-contacts">
+                    <ul>
+                        <li><img src="SVG/telephone.svg" alt="phone">+420 000 000 000</li>
+                        <li><img src="SVG/mark.svg" alt="locate">Na Plzeňce 1166/0 150 00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="privacy">
+                <p>Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
