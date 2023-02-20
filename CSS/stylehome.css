@@ -482,7 +482,7 @@ nav{
     #buk{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+
     }
     /* about us*/
     .aboutus{
